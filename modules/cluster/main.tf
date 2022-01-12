@@ -23,7 +23,7 @@ resource "google_container_cluster" "jx_cluster" {
   enable_kubernetes_alpha  = var.enable_kubernetes_alpha
   enable_legacy_abac       = var.enable_legacy_abac
   enable_shielded_nodes    = var.enable_shielded_nodes
-  remove_default_node_pool = true
+  remove_default_node_pool = false //----set by david----
   initial_node_count       = var.min_node_count
   logging_service          = var.logging_service
   monitoring_service       = var.monitoring_service
