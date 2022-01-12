@@ -434,3 +434,31 @@ variable "content" {
   type        = string
   default     = ""
 }
+
+//----added by david-----
+
+variable "node_version" {
+  description = "version of k8s cluster"
+  type        = string
+  default     = ""
+}
+
+variable "min_master_version" {
+  description = "minimum master version of k8s cluster"
+  type        = string
+  default     = ""
+}
+
+variable "cluster_ipv4_cidr_block" {
+  description = "pod ip address range"
+  type        = string
+  default     = ""
+}
+
+variable "services_ipv4_cidr_block" {
+  description = "pod ip address range"
+  type        = string
+  default     = ""
+}
+
+//-----------------------

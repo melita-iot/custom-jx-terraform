@@ -169,6 +169,13 @@ module "cluster" {
   release_channel   = var.release_channel
   resource_labels   = var.resource_labels
 
+//--------------added by david---------------
+  node_version              = var.node_version
+  min_master_version        = var.min_master_version
+  cluster_ipv4_cidr_block   = var.cluster_ipv4_cidr_block
+  services_ipv4_cidr_block  = var.services_ipv4_cidr_block
+//-------------------------------------------
+
   create_ui_sa = var.create_ui_sa
   jx2          = var.jx2
   content      = local.content
