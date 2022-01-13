@@ -32,11 +32,15 @@ resource "google_container_cluster" "jx_cluster" {
   //----added by david-----
 
 //  node_version            = var.node_version
-  min_master_version      = var.min_master_version
+  min_master_version        = var.min_master_version
 
   ip_allocation_policy {
     cluster_ipv4_cidr_block  = var.cluster_ipv4_cidr_block
     services_ipv4_cidr_block = var.services_ipv4_cidr_block
+  }
+
+  private_cluster_config {
+    enable_private_nodes = true
   }
 
   //-----------------------
