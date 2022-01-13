@@ -275,12 +275,6 @@ variable "kuberhealthy" {
 
 //----added by david-----
 
-variable "node_version" {
-  description = "version of k8s cluster"
-  type        = string
-  default     = ""
-}
-
 variable "min_master_version" {
   description = "minimum master version of k8s cluster"
   type        = string
