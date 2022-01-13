@@ -293,4 +293,11 @@ variable "services_ipv4_cidr_block" {
   default     = ""
 }
 
+# Control plane address range (has to be a unique ip-address range within the network)
+variable "master_ipv4_cidr_block" {
+  description = "pod ip address range"
+  type        = string
+  default     = "172.16.0.0/28"
+}
+
 //-----------------------

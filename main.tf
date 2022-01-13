@@ -173,6 +173,7 @@ module "cluster" {
   min_master_version        = var.min_master_version
   cluster_ipv4_cidr_block   = var.cluster_ipv4_cidr_block
   services_ipv4_cidr_block  = var.services_ipv4_cidr_block
+  master_ipv4_cidr_block    = var.master_ipv4_cidr_block
 //-------------------------------------------
 
   create_ui_sa = var.create_ui_sa
