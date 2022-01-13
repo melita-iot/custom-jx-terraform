@@ -44,10 +44,6 @@ resource "google_container_cluster" "jx_cluster" {
   }
 
   //-----------------------
-
-  private_cluster_config {
-    enable_private_nodes = true
-  }
   
   // should disable master auth
   master_auth {
